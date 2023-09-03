@@ -1,1 +1,41 @@
-<p>navbar works!</p>
+<nav class="flex items-center justify-between p-4 lg:p-8">
+  <div class="hidden lg:flex w-full justify-between">
+
+    <div class="flex items-center space-x-4 ml-12">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+
+    <div class="flex items-center space-x-12">
+      <ul class="flex items-center space-x-12">
+        <li>Shop</li>
+        <li>Essentials</li>
+      </ul>
+
+      <h2 class="flex text-center text-xl lg:text-2xl font-bold mx-4 max-w-[125px]">
+        Macc Essentials
+      </h2>
+      <ul class="flex items-center space-x-12">
+        <li>Best Sellers</li>
+        <li>About Us</li>
+      </ul>
+    </div>
+
+    <div class="flex items-center space-x-4 mr-12">
+      <ul class="flex items-center space-x-4">
+        <li><i class="fa fa-user" aria-hidden="true"></i></li>
+        <li><i class="fa fa-bell" aria-hidden="true"></i></li>
+        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lg:hidden flex items-center">
+    <h2 class="flex text-center text-xl font-bold ml-6">
+      Macc Essentials
+    </h2>
+  </div>
+
+  <div class="lg:hidden flex items-center ml-auto mr-6">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+</nav>
