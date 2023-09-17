@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SigninBarComponent } from './components/header/signin-bar/signin-bar.component';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -11,14 +12,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     HeaderComponent,
     SigninBarComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
     FontAwesomeModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
