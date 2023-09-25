@@ -1,36 +1,47 @@
-<footer>
-  <div class="font-bold text-3xl">
-    <h2 class="text-primary">Macc 
-      <br>
-      <span class="text-secondary">Essentials</span></h2>
+<footer class="container mx-auto py-12 px-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+    <div class="col-span-1 md:col-span-1 lg:col-span-1">
+      <div class="font-bold text-2xl">
+        <h2 class="text-primary">
+          Macc
+          <br>
+          <span class="text-secondary">Essentials</span>
+        </h2>
+      </div>
+    </div>
+    <div class="col-span-1 md:col-span-1 lg:col-span-1">
+      <ul class="uppercase text-xs">
+        <li class="pb-2"><a href="">Home</a></li>
+        <li class="pb-2"><a href="">Collection</a></li>
+        <li><a href="">Products</a></li>
+      </ul>
+    </div>
+    <div class="col-span-1 md:col-span-1 lg:col-span-1">
+      <ul class="uppercase text-xs">
+        <li class="pb-2"><a href="">About</a></li>
+        <li class="pb-2"><a href="">Contact</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="col-span-1 md:col-span-3 lg:col-span-1 email-form">
+      <p class="text-xs mb-4 max-w-[220px]">Be the first to know about our biggest and best sales. We'll never send more than one email a month.</p>
+      <form action="" class="flex">
+        <input type="email" placeholder="Enter your email" class="border-b-2 text-sm">
+        <span>
+          <li class="list-none border-b-2">
+            <fa-icon [icon]="faEnvelope"></fa-icon>
+          </li>
+        </span>
+      </form>
+      <ul class="flex text-secondary text-2xl mt-4">
+        <li class="p-2"><fa-icon [icon]="faTwitter"></fa-icon></li>
+        <li class="p-2"><fa-icon [icon]="faLinkedin"></fa-icon></li>
+        <li class="p-2"><fa-icon [icon]="faFacebook"></fa-icon></li>
+        <li class="p-2"><fa-icon [icon]="faInstagram"></fa-icon></li>
+      </ul>
+    </div>
   </div>
-  <div>
-    <ul class="uppercase">
-      <li><a href="">Home</a></li>
-      <li><a href="">Collection</a></li>
-      <li><a href="">Products</a></li>
-    </ul>
-  </div>
-  <div>
-    <ul class="uppercase">
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-      <li><a href="">FAQ</a></li>
-    </ul>
-  </div>
-  <div>
-    <p>Be the first to know about our biggest and best sales. We'll never send more than one email a month.</p>
-    <form action="" class="flex">
-      <input type="email" placeholder="Enter your email" class="border-b-2"><span><li class="list-none border-b-2"><fa-icon [icon]="faEnvelope"></fa-icon></li></span>
-    </form>
-    <ul class="flex">
-      <li class="list-none text-2xl p-2"><fa-icon [icon]="faTwitter"></fa-icon></li>
-      <li class="list-none text-2xl p-2"><fa-icon [icon]="faLinkedin"></fa-icon></li>
-      <li class="list-none text-2xl p-2"><fa-icon [icon]="faFacebook"></fa-icon></li>
-      <li class="list-none text-2xl p-2"><fa-icon [icon]="faInstagram"></fa-icon></li>
-    </ul>
-  </div>
-  <div>
-    <p>All rights are reserved</p>
+  <div class="text-center text-xs">
+    <p>All rights are reserved. {{ currentYear }} &copy;</p>
   </div>
 </footer>

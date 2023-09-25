@@ -9,6 +9,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 })
 export class FooterComponent {
 
+  currentYear = new Date().getFullYear();
+
   faTwitter = faTwitter;
   faFacebook = faFacebook;
   faInstagram = faInstagram;
