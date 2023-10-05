@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-products.component.scss']
 })
 export class NewProductsComponent implements OnInit {
-  
+
   products = [
     {image: "/assets/images/blue-shoe.png", name: "Blue shoes"},
     {image: "/assets/images/flower-heels.png", name: "Flower heels"},
@@ -22,6 +22,7 @@ export class NewProductsComponent implements OnInit {
     
   }
 
+  // TODO: Scroll through products
   prev() {
 
   }
