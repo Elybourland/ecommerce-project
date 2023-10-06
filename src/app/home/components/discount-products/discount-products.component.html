@@ -4,7 +4,7 @@
   </div>
 
   <div class="w-full md:w-2/3">
-    <div class="flex justify-between mb-4 px-8">
+    <div class="flex justify-between mb-4 md:px-28">
       <h2 class="text-primary font-extrabold uppercase text-2xl">Macc <span class="text-secondary">Weekly Discounts</span></h2>
       <button>View All</button>
     </div>
@@ -12,7 +12,7 @@
     <div class="carousel w-full relative overflow-hidden">
       <ng-container *ngFor="let discountProduct of discountProducts">
         <div class="carousel-item relative flex flex-col w-full md:w-1/2 items-center mb-16 md:mb-0">
-          <img [src]="discountProduct.image" class="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 object-cover rounded-2xl" />
+          <img [src]="discountProduct.image" class="sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 object-cover rounded-2xl" />
           <p class="font-semibold">{{ discountProduct.name }}</p>
         </div>
       </ng-container>
